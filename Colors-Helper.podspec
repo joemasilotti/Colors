@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "Colors-Helper"
-  spec.version = "0.0.1"
+  spec.version = "0.0.2"
   spec.summary = "Convert hex and RGB colors to UIColor."
   spec.homepage = "https://github.com/joemasilotti/Colors"
   spec.license = { type: "MIT", file: "LICENSE" }
