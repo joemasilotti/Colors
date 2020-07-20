@@ -11,4 +11,5 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.source = { git: "https://github.com/joemasilotti/Colors.git", tag: "v#{spec.version}" }
   spec.source_files = "Colors/**/*.{h,swift}"
+  spec.swift_version = "5.0"
 end
