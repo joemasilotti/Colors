@@ -1,34 +1,16 @@
-//
-//  ColorsTests.swift
-//  ColorsTests
-//
-//  Created by Joe Masilotti on 7/20/20.
-//  Copyright © 2020 Masilotti.com. All rights reserved.
-//
-
 import XCTest
-@testable import Colors
+import Colors
 
 class ColorsTests: XCTestCase {
+    func testRGB() throws {
+        let red = UIColor(
+            red: CGFloat(195 / 255),
+            green: CGFloat(47 / 255),
+            blue: CGFloat(52 / 255),
+            alpha: 1
+        )
+        let color = Colors.rgb(195, 47, 52)
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        XCTAssertEqual(red, color)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

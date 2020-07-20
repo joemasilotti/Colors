@@ -10,6 +10,7 @@
 		847B3DA424C6108E0001D0C2 /* Colors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847B3D9A24C6108E0001D0C2 /* Colors.framework */; };
 		847B3DA924C6108E0001D0C2 /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B3DA824C6108E0001D0C2 /* ColorsTests.swift */; };
 		847B3DAB24C6108E0001D0C2 /* Colors.h in Headers */ = {isa = PBXBuildFile; fileRef = 847B3D9D24C6108E0001D0C2 /* Colors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84D25E8F24C613D100848ABB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D25E8E24C613D000848ABB /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		847B3DA324C6108E0001D0C2 /* ColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B3DA824C6108E0001D0C2 /* ColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTests.swift; sourceTree = "<group>"; };
 		847B3DAA24C6108E0001D0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D25E8E24C613D000848ABB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				847B3D9D24C6108E0001D0C2 /* Colors.h */,
+				84D25E8E24C613D000848ABB /* Colors.swift */,
 				847B3D9E24C6108E0001D0C2 /* Info.plist */,
 			);
 			path = Colors;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					847B3D9924C6108E0001D0C2 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					847B3DA224C6108E0001D0C2 = {
 						CreatedOnToolsVersion = 11.5;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D25E8F24C613D100848ABB /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		847B3DAF24C6108E0001D0C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6JS2VP4ATY;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.masilotti.Colors;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		847B3DB024C6108E0001D0C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6JS2VP4ATY;
@@ -388,6 +396,7 @@
 		847B3DB224C6108E0001D0C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JS2VP4ATY;
 				INFOPLIST_FILE = ColorsTests/Info.plist;
@@ -406,6 +415,7 @@
 		847B3DB324C6108E0001D0C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JS2VP4ATY;
 				INFOPLIST_FILE = ColorsTests/Info.plist;
