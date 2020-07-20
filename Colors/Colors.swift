@@ -9,5 +9,12 @@ public struct Colors {
             alpha: 1
         )
     }
-}
 
+    public static func hex(_ hex: Int) -> UIColor? {
+        return rgb(
+            (hex >> 16) & 0xFF,
+            (hex >> 8) & 0xFF,
+            hex & 0xFF
+        )
+    }
+}
